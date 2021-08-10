@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+	<head th:replace="fragments/head :: head"></head>
+	<header th:replace="fragments/header :: header"></header>
+	
+		<body class="text-center">
+			<main class="form-signin">
+			
+			  <form th:object="${cliente}" th:method="post" action="./detalleCliente.html"
+        			th:action="@{${#httpServletRequest.servletPath}}" class="form-horizontal" id="add-cliente-form">
+			    <img class="mb-4" th:src="@{/images/bootstrap-logo.svg}" alt="" width="72" height="57"
+             						src="/images/bootstrap-logo.svg"/>
+			    <h1>
+      				<span th:if="${cliente.id} == null" th:remove="tag">Nuevo </span>Cliente
+    			</h1>
+			
+			    <div class="form-floating">
+			      <input th:if="${cliente.id} != null" type="text" th:field="*{id}" readonly="true" class="form-control" id="floatingInput">
+			      <label for="floatingInput"><span th:if="${cliente.id} != null" th:remove="tag">ID</span></label>
+			    </div>
+
+			    <div class="form-floating" th:classappend="${#fields.hasErrors('name')} ? error">
+			      <input class="form-control" id="floatingPassword" type="text" th:field="*{name}" />
+					<span class="help-inline text-danger" th:errors="*{name}">[error]</span>
+			      <label for="floatingPassword">Nombre</label>
+			    </div>
+
+				<div class="form-floating" th:classappend="${#fields.hasErrors('lastName')} ? error">
+			      <input class="form-control" id="floatingPassword" type="text" th:field="*{lastName}" />
+					<span class="help-inline text-danger" th:errors="*{lastName}">[error]</span>
+			      <label for="floatingPassword">Apellido</label>
+			    </div>
+				
+				<div class="form-floating" th:classappend="${#fields.hasErrors('email')} ? error">
+			      <input class="form-control" id="floatingPassword" type="email" th:field="*{email}" />
+					<span class="help-inline text-danger" th:errors="*{email}">[error]</span>
+			      <label for="floatingPassword">Email</label>
+			    </div>			
+
+				<div class="form-floating" th:classappend="${#fields.hasErrors('password')} ? error">
+			      <input class="form-control" id="floatingPassword1" type="password" th:field="*{password}" />
+					<span class="help-inline text-danger" th:errors="*{password}">[error]</span>
+			      <label for="floatingPassword1">Contraseña</label>
+			    </div>
+
+
+				<span th:if="${cliente.id} == null" th:remove="tag">
+					<div class="form-floating" th:classappend="${#fields.hasErrors('passwordConfirm')} ? error">
+			      		<input class="form-control" id="floatingPassword1" type="password" th:field="*{passwordConfirm}" />
+						<span class="help-inline text-danger" th:errors="*{passwordConfirm}">[error]</span>
+			      		<label for="floatingPassword1">Confirmar Contraseña</label>
+			    	</div>			
+				</span>
+			    <button class="w-100 btn btn-lg btn-primary" type="submit">Aceptar</button>
+			    
+			  </form>
+			</main>
+	<footer th:replace="fragments/footer :: footer"></footer>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+	<head th:replace="fragments/head :: head"></head>
+	<header th:replace="fragments/header :: header"></header>
+	<body class="text-center">
+		<main>
+		<h1>Informacion del producto</h1>
+		<div class="table-responsive container-sm">
+			<table class="table caption-top">
+				  <thead>
+				    <tr>
+				      	<th scope="col">ID</th>				
+				     	<th scope="col">Nombre</th>
+				      	<th scope="col">Precio</th>
+						<th scope="col">Stock</th>
+						<th scope="col">Opciones</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+						<td><b th:text="${producto.id}"></b></td>
+						<td><b th:text="${producto.name}"></b></td>
+						<td><b th:text="${producto.price}"></b></td>
+						<td><b th:text="${producto.stock}"></b></td>
+						<td><a th:href="@{|${producto.id}/editar|}" href="./crearOModificarProductosFormulario.html" class="btn btn-info">Editar</a></td>
+				    </tr>			      
+				  </tbody>
+				</table>
+			</div>
+		</main>
+			<footer th:replace="fragments/footer :: footer"></footer>
+  	</body>
+</html>

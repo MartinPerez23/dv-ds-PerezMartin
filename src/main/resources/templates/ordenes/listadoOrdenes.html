@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+	<head th:replace="fragments/head :: head"></head>
+	<header class="site-header sticky-top py-1">
+  <nav class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="py-2" href="../">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+    </a>
+    <a class="py-2 d-none d-md-inline-block fw-bold text-light" href="../panel">LISTA PRODUCTOS</a>
+    <a class="py-2 d-none d-md-inline-block fw-bold text-light" href="../cliente/listar">LISTA CLIENTES</a>
+    <a class="py-2 d-none d-md-inline-block fw-bold text-light" href="../ordenes/listar">LISTA ORDENES</a>
+	
+  </nav>
+</header>
+	<body>
+		<main>
+		<div class="container-fluid bg-dark text-white">
+    		<h1 class="mt-5 mb-3">Listado de Ordenes</h1>			
+
+			<div class="row">
+			        <div class="col-12">
+			            <table class="table text-white">
+			                <thead>
+			                    <tr>
+			                        <th>ID ORDEN</th>
+			                        <th>ID CLIENTE</th>
+			                        <th>NOMBRE Y APELLIDO</th>
+			                        <th>ID PRODUCTOS</th>
+									<th>DETALLE PRODUCTOS</th>
+									<th>PRECIO</th>
+									<th>CANTIDAD</th>
+									<th>FECHA</th>
+									<th>SUBTOTAL</th>
+									<th>OPCIONES</th>					                        
+			                    </tr>
+			                </thead>
+			                <tbody>                    			                   		
+								<div th:each="orden : ${ordenes}">
+			                    	<tr>
+										<td><b th:text="${orden.id}"></b></td>
+										 <td><b th:text="${orden.client.id}"></b></td>
+										<td><b th:text="|${orden.client.name} ${orden.client.lastName}|"></b></td>
+										<td><b th:each="carrito : ${orden.items}"><p th:text="${carrito.product.id}"></p></b></td>
+										<td><b th:each="carrito : ${orden.items}"><p th:text="${carrito.product.name}"></p></b></td>
+										<td><b th:each="carrito : ${orden.items}"><p th:text="${carrito.product.price}"></p></b></td>
+										<td><b th:each="carrito : ${orden.items}"><p th:text="${carrito.quantity}"></p></b></td>										
+										<td><b th:text="${orden.date}"></b></td>
+										<td><b th:each="carrito : ${orden.items}"><p th:text="${carrito}"></p></b></td>										
+										
+										<td><a th:href="@{|../ordenes/${orden.id}/editar|}" href="./crearOModificarOrdenFormulario.html" class="btn btn-success">Editar</a></td>
+					    			</tr>
+								</div>                    
+			                </tbody>
+			            </table>
+			
+			        </div>
+			    </div>
+			
+			</div>
+  		</main>
+	<footer th:replace="fragments/footer :: footer"></footer>
+  </body>
+</html>

@@ -1,0 +1,373 @@
+2021-08-04 02:58:20,129 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-08-04 02:58:20,137 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DvDsPerezMartinApplication using Java 15.0.2 on MASTER-PC with PID 16448 (C:\Users\MASTER\Desktop\DaVinci\5to cuatrimestre\Diseño Sistemas\Final\dv-ds-PerezMartin\target\classes started by MASTER in C:\Users\MASTER\Desktop\DaVinci\5to cuatrimestre\Diseño Sistemas\Final\dv-ds-PerezMartin)
+2021-08-04 02:58:20,137 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.8, Spring v5.3.8
+2021-08-04 02:58:20,137 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-04 02:58:20,165 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-04 02:58:20,166 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-04 02:58:20,720 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-04 02:58:20,762 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
+2021-08-04 02:58:21,212 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-08-04 02:58:21,218 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-04 02:58:21,219 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-08-04 02:58:21,219 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-08-04 02:58:21,287 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-04 02:58:21,288 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1121 ms
+2021-08-04 02:58:21,403 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-08-04 02:58:21,528 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-08-04 02:58:21,532 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/dv-ds-perezmartin'
+2021-08-04 02:58:21,669 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-04 02:58:21,703 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-04 02:58:21,784 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-04 02:58:21,856 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-08-04 02:58:22,250 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-04 02:58:22,256 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-04 02:58:22,288 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-08-04 02:58:22,648 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-04 02:58:23,011 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-04 02:58:23,301 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-08-04 02:58:23,336 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-08-04 02:58:23,351 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-04 02:58:23,360 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DvDsPerezMartinApplication in 3.49 seconds (JVM running for 4.019)
+2021-08-04 02:58:34,578 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(2)-127.0.0.1] Application shutdown requested.
+2021-08-04 02:58:34,597 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(2)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-04 02:58:34,600 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-08-04 02:58:34,605 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2021-08-04 02:58:50,073 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-08-04 02:58:50,079 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DvDsPerezMartinApplication using Java 15.0.2 on MASTER-PC with PID 14928 (C:\Users\MASTER\Desktop\DaVinci\5to cuatrimestre\Diseño Sistemas\Final\dv-ds-PerezMartin\target\classes started by MASTER in C:\Users\MASTER\Desktop\DaVinci\5to cuatrimestre\Diseño Sistemas\Final\dv-ds-PerezMartin)
+2021-08-04 02:58:50,079 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.8, Spring v5.3.8
+2021-08-04 02:58:50,079 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-04 02:58:50,106 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-04 02:58:50,107 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-04 02:58:50,663 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-04 02:58:50,706 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interfaces.
+2021-08-04 02:58:51,152 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-08-04 02:58:51,159 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-04 02:58:51,159 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-08-04 02:58:51,159 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-08-04 02:58:51,225 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-04 02:58:51,225 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1118 ms
+2021-08-04 02:58:51,340 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-08-04 02:58:51,465 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-08-04 02:58:51,468 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/dv-ds-perezmartin'
+2021-08-04 02:58:51,603 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-04 02:58:51,636 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-04 02:58:51,717 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-04 02:58:51,786 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-08-04 02:58:52,175 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-04 02:58:52,181 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-04 02:58:52,213 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-08-04 02:58:52,562 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-04 02:58:52,928 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-04 02:58:53,222 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-08-04 02:58:53,252 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-08-04 02:58:53,267 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-04 02:58:53,276 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DvDsPerezMartinApplication in 3.465 seconds (JVM running for 3.988)
+2021-08-04 02:58:58,214 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-04 02:58:58,214 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-08-04 02:58:58,216 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-08-04 02:59:17,115 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(2)-127.0.0.1] Application shutdown requested.
+2021-08-04 02:59:17,134 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(2)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-04 02:59:17,137 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-08-04 02:59:17,141 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2021-08-04 03:28:52,397 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-08-04 03:28:52,403 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DvDsPerezMartinApplication using Java 15.0.2 on MASTER-PC with PID 15944 (C:\Users\MASTER\Desktop\DaVinci\5to cuatrimestre\Diseño Sistemas\Final\dv-ds-PerezMartin\target\classes started by MASTER in C:\Users\MASTER\Desktop\DaVinci\5to cuatrimestre\Diseño Sistemas\Final\dv-ds-PerezMartin)
+2021-08-04 03:28:52,403 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.8, Spring v5.3.8
+2021-08-04 03:28:52,404 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-04 03:28:52,431 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-04 03:28:52,432 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-04 03:28:53,000 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-04 03:28:53,053 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 47 ms. Found 4 JPA repository interfaces.
+2021-08-04 03:28:53,503 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-08-04 03:28:53,509 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-04 03:28:53,510 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-08-04 03:28:53,510 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-08-04 03:28:53,578 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-04 03:28:53,578 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1146 ms
+2021-08-04 03:28:53,696 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-08-04 03:28:53,822 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-08-04 03:28:53,825 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/dv-ds-perezmartin'
+2021-08-04 03:28:53,971 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-04 03:28:54,004 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-04 03:28:54,085 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-04 03:28:54,154 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-08-04 03:28:54,581 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-04 03:28:54,587 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-04 03:28:55,020 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-04 03:28:55,390 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-04 03:28:55,698 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-08-04 03:28:55,704 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-08-04 03:28:55,735 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-08-04 03:28:55,749 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-04 03:28:55,759 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DvDsPerezMartinApplication in 3.617 seconds (JVM running for 4.144)
+2021-08-04 03:29:09,466 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-04 03:29:09,466 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-08-04 03:29:09,467 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-08-04 03:43:36,904 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-04 03:43:36,907 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2021-08-04 03:43:36,912 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2021-08-04 03:43:36,977 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DvDsPerezMartinApplication using Java 15.0.2 on MASTER-PC with PID 15944 (C:\Users\MASTER\Desktop\DaVinci\5to cuatrimestre\Diseño Sistemas\Final\dv-ds-PerezMartin\target\classes started by MASTER in C:\Users\MASTER\Desktop\DaVinci\5to cuatrimestre\Diseño Sistemas\Final\dv-ds-PerezMartin)
+2021-08-04 03:43:36,977 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.8, Spring v5.3.8
+2021-08-04 03:43:36,978 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-04 03:43:37,173 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-04 03:43:37,189 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 15 ms. Found 4 JPA repository interfaces.
+2021-08-04 03:43:37,257 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-08-04 03:43:37,258 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-04 03:43:37,258 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-08-04 03:43:37,258 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-08-04 03:43:37,277 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-04 03:43:37,277 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 298 ms
+2021-08-04 03:43:37,297 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2021-08-04 03:43:37,300 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2021-08-04 03:43:37,300 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/dv-ds-perezmartin'
+2021-08-04 03:43:37,328 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-04 03:43:37,332 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-08-04 03:43:37,373 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-04 03:43:37,373 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-04 03:43:37,503 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-04 03:43:37,580 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-04 03:43:37,666 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-08-04 03:43:37,668 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-08-04 03:43:37,682 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-08-04 03:43:37,683 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-04 03:43:37,689 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DvDsPerezMartinApplication in 0.736 seconds (JVM running for 886.075)
+2021-08-04 03:43:37,691 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-08-04 03:43:39,229 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(18)-127.0.0.1] Application shutdown requested.
+2021-08-04 03:43:39,244 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(18)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-04 03:43:39,245 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(18)-127.0.0.1] HikariPool-2 - Shutdown initiated...
+2021-08-04 03:43:39,246 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(18)-127.0.0.1] HikariPool-2 - Shutdown completed.
+2021-08-04 03:52:00,748 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-08-04 03:52:00,754 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DvDsPerezMartinApplication using Java 15.0.2 on MASTER-PC with PID 4124 (C:\Users\MASTER\Desktop\DaVinci\5to cuatrimestre\Diseño Sistemas\Final\dv-ds-PerezMartin\target\classes started by MASTER in C:\Users\MASTER\Desktop\DaVinci\5to cuatrimestre\Diseño Sistemas\Final\dv-ds-PerezMartin)
+2021-08-04 03:52:00,754 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.8, Spring v5.3.8
+2021-08-04 03:52:00,754 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-04 03:52:00,781 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-04 03:52:00,781 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-04 03:52:01,357 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-04 03:52:01,412 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 49 ms. Found 4 JPA repository interfaces.
+2021-08-04 03:52:01,858 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-08-04 03:52:01,865 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-04 03:52:01,865 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-08-04 03:52:01,865 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-08-04 03:52:01,934 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-04 03:52:01,934 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1152 ms
+2021-08-04 03:52:02,050 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-08-04 03:52:02,172 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-08-04 03:52:02,176 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/dv-ds-perezmartin'
+2021-08-04 03:52:02,325 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-04 03:52:02,356 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-04 03:52:02,437 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-04 03:52:02,508 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-08-04 03:52:02,931 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-04 03:52:02,937 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-04 03:52:03,391 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-04 03:52:03,766 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-04 03:52:04,082 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-08-04 03:52:04,087 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-08-04 03:52:04,118 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-08-04 03:52:04,132 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-04 03:52:04,142 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DvDsPerezMartinApplication in 3.653 seconds (JVM running for 4.181)
+2021-08-04 03:52:08,836 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-04 03:52:08,836 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-08-04 03:52:08,837 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-08-04 03:52:42,278 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(4)-127.0.0.1] Application shutdown requested.
+2021-08-04 03:52:42,301 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(4)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-04 03:52:42,304 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(4)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-08-04 03:52:42,308 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(4)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2021-08-04 04:13:48,965 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-08-04 04:13:48,972 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DvDsPerezMartinApplication using Java 15.0.2 on MASTER-PC with PID 17032 (C:\Users\MASTER\Desktop\DaVinci\5to cuatrimestre\Diseño Sistemas\Final\dv-ds-PerezMartin\target\classes started by MASTER in C:\Users\MASTER\Desktop\DaVinci\5to cuatrimestre\Diseño Sistemas\Final\dv-ds-PerezMartin)
+2021-08-04 04:13:48,972 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.8, Spring v5.3.8
+2021-08-04 04:13:48,972 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-04 04:13:49,000 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-04 04:13:49,000 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-04 04:13:49,583 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-04 04:13:49,639 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 51 ms. Found 4 JPA repository interfaces.
+2021-08-04 04:13:50,102 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-08-04 04:13:50,109 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-04 04:13:50,109 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-08-04 04:13:50,109 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-08-04 04:13:50,175 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-04 04:13:50,175 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1174 ms
+2021-08-04 04:13:50,291 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-08-04 04:13:50,414 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-08-04 04:13:50,418 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/dv-ds-perezmartin'
+2021-08-04 04:13:50,555 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-04 04:13:50,590 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-04 04:13:50,672 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-04 04:13:50,741 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-08-04 04:13:51,163 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-04 04:13:51,169 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-04 04:13:51,584 INFO ar.edu.davinci.dvdsPerezMartin.WebConfig [restartedMain] Template Resolver
+2021-08-04 04:13:51,584 INFO ar.edu.davinci.dvdsPerezMartin.WebConfig [restartedMain] Template Resolver result: org.thymeleaf.templateresolver.ClassLoaderTemplateResolver@7affc5eb
+2021-08-04 04:13:51,588 INFO ar.edu.davinci.dvdsPerezMartin.WebConfig [restartedMain] Spring Template Engine
+2021-08-04 04:13:51,596 INFO ar.edu.davinci.dvdsPerezMartin.WebConfig [restartedMain] Spring Template Engine result: org.thymeleaf.spring5.SpringTemplateEngine@a9ae97f
+2021-08-04 04:13:51,599 INFO ar.edu.davinci.dvdsPerezMartin.WebConfig [restartedMain] View Resolver
+2021-08-04 04:13:51,601 INFO ar.edu.davinci.dvdsPerezMartin.WebConfig [restartedMain] View Resolver result: org.thymeleaf.spring5.view.ThymeleafViewResolver@16d0b41e
+2021-08-04 04:13:51,645 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-04 04:13:51,940 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index
+2021-08-04 04:13:52,321 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2021-08-04 04:13:52,327 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-08-04 04:13:52,362 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-08-04 04:13:52,376 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-04 04:13:52,386 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DvDsPerezMartinApplication in 3.68 seconds (JVM running for 4.21)
+2021-08-04 04:14:07,367 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-04 04:14:07,367 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-08-04 04:14:07,368 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-08-04 04:14:10,976 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteSimpleControlador [http-nio-8080-exec-2] GET - showClientePage  - /cliente/list
+2021-08-04 04:14:11,058 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteSimpleControlador [http-nio-8080-exec-2] clientes.size: 0
+2021-08-04 04:14:14,310 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteSimpleControlador [http-nio-8080-exec-3] GET - viewHomePage - /index
+2021-08-04 04:14:17,949 WARN org.springframework.context.support.ResourceBundleMessageSource [http-nio-8080-exec-4] ResourceBundle [Messages] not found for MessageSource: Can't find bundle for base name Messages, locale es_ES
+2021-08-04 04:14:17,950 WARN org.springframework.context.support.ResourceBundleMessageSource [http-nio-8080-exec-4] ResourceBundle [Messages] not found for MessageSource: Can't find bundle for base name Messages, locale es_ES
+2021-08-04 04:14:27,249 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteThymeleafControlador [http-nio-8080-exec-8] GET - initFindForm: /cliente/buscar
+2021-08-04 04:14:31,289 WARN org.springframework.context.support.ResourceBundleMessageSource [http-nio-8080-exec-3] ResourceBundle [Messages] not found for MessageSource: Can't find bundle for base name Messages, locale es_ES
+2021-08-04 04:14:31,289 WARN org.springframework.context.support.ResourceBundleMessageSource [http-nio-8080-exec-3] ResourceBundle [Messages] not found for MessageSource: Can't find bundle for base name Messages, locale es_ES
+2021-08-04 04:14:53,880 WARN org.springframework.context.support.ResourceBundleMessageSource [http-nio-8080-exec-2] ResourceBundle [Messages] not found for MessageSource: Can't find bundle for base name Messages, locale es_ES
+2021-08-04 04:14:53,880 WARN org.springframework.context.support.ResourceBundleMessageSource [http-nio-8080-exec-2] ResourceBundle [Messages] not found for MessageSource: Can't find bundle for base name Messages, locale es_ES
+2021-08-04 04:14:55,938 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteThymeleafControlador [http-nio-8080-exec-9] GET - initFindForm: /cliente/buscar
+2021-08-04 04:14:58,298 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteThymeleafControlador [http-nio-8080-exec-2] GET - initCreationForm: /cliente/nuevo
+2021-08-04 04:14:58,299 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteThymeleafControlador [http-nio-8080-exec-2] cliente: Cliente(id=null, name=null, lastName=null, email=null, password=null)
+2021-08-04 04:15:24,410 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteThymeleafControlador [http-nio-8080-exec-5] POST - processCreationForm: /cliente/nuevo
+2021-08-04 04:15:24,410 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteThymeleafControlador [http-nio-8080-exec-5] cliente: Cliente(id=null, name=juan, lastName=juan, email=juanjuan@davinci.edu.ar, password=1234)
+2021-08-04 04:15:24,410 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteThymeleafControlador [http-nio-8080-exec-5] result.hasErrors(): false
+2021-08-04 04:15:24,441 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteThymeleafControlador [http-nio-8080-exec-7] GET - showCliente: /cliente/{clienteId}  - clienteId: 1
+2021-08-04 04:15:24,451 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteThymeleafControlador [http-nio-8080-exec-7] cliente: Cliente(id=1, name=juan, lastName=juan, email=juanjuan@davinci.edu.ar, password=1234)
+2021-08-04 04:15:29,922 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteThymeleafControlador [http-nio-8080-exec-2] GET - initFindForm: /cliente/buscar
+2021-08-04 04:15:32,657 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteThymeleafControlador [http-nio-8080-exec-3] GET - processFindForm: /clientes
+2021-08-04 04:15:32,657 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteThymeleafControlador [http-nio-8080-exec-3] cliente: Cliente(id=null, name=null, lastName=, email=null, password=null)
+2021-08-04 04:15:32,662 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteThymeleafControlador [http-nio-8080-exec-3]  por lastName null results.size: 1
+2021-08-04 04:15:32,662 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteThymeleafControlador [http-nio-8080-exec-3] results.size: 1
+2021-08-04 04:15:32,666 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteThymeleafControlador [http-nio-8080-exec-4] GET - showCliente: /cliente/{clienteId}  - clienteId: 1
+2021-08-04 04:15:32,668 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteThymeleafControlador [http-nio-8080-exec-4] cliente: Cliente(id=1, name=juan, lastName=juan, email=juanjuan@davinci.edu.ar, password=1234)
+2021-08-04 04:15:35,349 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteThymeleafControlador [http-nio-8080-exec-1] GET - initFindForm: /cliente/buscar
+2021-08-04 04:15:36,703 WARN org.springframework.context.support.ResourceBundleMessageSource [http-nio-8080-exec-5] ResourceBundle [Messages] not found for MessageSource: Can't find bundle for base name Messages, locale es_ES
+2021-08-04 04:15:36,703 WARN org.springframework.context.support.ResourceBundleMessageSource [http-nio-8080-exec-5] ResourceBundle [Messages] not found for MessageSource: Can't find bundle for base name Messages, locale es_ES
+2021-08-04 04:15:37,860 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteThymeleafControlador [http-nio-8080-exec-9] GET - initFindForm: /cliente/buscar
+2021-08-04 04:15:40,138 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteThymeleafControlador [http-nio-8080-exec-10] GET - processFindForm: /clientes
+2021-08-04 04:15:40,138 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteThymeleafControlador [http-nio-8080-exec-10] cliente: Cliente(id=null, name=null, lastName=juan, email=null, password=null)
+2021-08-04 04:15:40,139 INFO ar.edu.davinci.dvdsPerezMartin.servicio.ClienteServicio [http-nio-8080-exec-10] buscarClienterPorApellido: apellido: juan
+2021-08-04 04:15:40,151 INFO ar.edu.davinci.dvdsPerezMartin.servicio.ClienteServicio [http-nio-8080-exec-10] clientes.size: 1
+2021-08-04 04:15:40,152 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteThymeleafControlador [http-nio-8080-exec-10]  por lastName not null results.size: 1
+2021-08-04 04:15:40,152 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteThymeleafControlador [http-nio-8080-exec-10] results.size: 1
+2021-08-04 04:15:40,156 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteThymeleafControlador [http-nio-8080-exec-5] GET - showCliente: /cliente/{clienteId}  - clienteId: 1
+2021-08-04 04:15:40,158 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteThymeleafControlador [http-nio-8080-exec-5] cliente: Cliente(id=1, name=juan, lastName=juan, email=juanjuan@davinci.edu.ar, password=1234)
+2021-08-04 04:16:06,056 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteSimpleControlador [http-nio-8080-exec-3] GET - showClientePage  - /cliente/list
+2021-08-04 04:16:06,058 INFO ar.edu.davinci.dvdsPerezMartin.controlador.view.ClienteSimpleControlador [http-nio-8080-exec-3] clientes.size: 1
+2021-08-04 04:18:14,192 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-04 04:18:14,194 INFO com.zaxxer.hikari.HikariDataSource [Thread-1] HikariPool-1 - Shutdown initiated...
+2021-08-04 04:18:14,199 INFO com.zaxxer.hikari.HikariDataSource [Thread-1] HikariPool-1 - Shutdown completed.
+2021-08-04 04:18:14,267 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DvDsPerezMartinApplication using Java 15.0.2 on MASTER-PC with PID 17032 (C:\Users\MASTER\Desktop\DaVinci\5to cuatrimestre\Diseño Sistemas\Final\dv-ds-PerezMartin\target\classes started by MASTER in C:\Users\MASTER\Desktop\DaVinci\5to cuatrimestre\Diseño Sistemas\Final\dv-ds-PerezMartin)
+2021-08-04 04:18:14,267 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.8, Spring v5.3.8
+2021-08-04 04:18:14,267 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-04 04:18:14,464 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-04 04:18:14,484 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 19 ms. Found 4 JPA repository interfaces.
+2021-08-04 04:18:14,556 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-08-04 04:18:14,557 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-04 04:18:14,557 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-08-04 04:18:14,557 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-08-04 04:18:14,574 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-04 04:18:14,575 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 306 ms
+2021-08-04 04:18:14,595 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2021-08-04 04:18:14,598 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2021-08-04 04:18:14,598 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/dv-ds-perezmartin'
+2021-08-04 04:18:14,628 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-04 04:18:14,632 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-08-04 04:18:14,673 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-04 04:18:14,673 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-04 04:18:14,681 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clienteRestControlador': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [ar.edu.davinci.dvdsPerezMartin.controlador.rest.ClienteRestControlador] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@498c140b]
+2021-08-04 04:18:14,681 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-04 04:18:14,681 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Shutdown initiated...
+2021-08-04 04:18:14,682 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Shutdown completed.
+2021-08-04 04:18:14,682 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2021-08-04 04:18:14,688 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-08-04 04:18:14,700 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clienteRestControlador': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [ar.edu.davinci.dvdsPerezMartin.controlador.rest.ClienteRestControlador] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@498c140b]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1284)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1201)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:771)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:763)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1318)
+	at ar.edu.davinci.dvdsPerezMartin.DvDsPerezMartinApplication.main(DvDsPerezMartinApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [ar.edu.davinci.dvdsPerezMartin.controlador.rest.ClienteRestControlador] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@498c140b]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267)
+	... 24 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: ClienteResponse
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3325)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2466)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: ClienteResponse
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:606)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:468)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 30 common frames omitted
+2021-08-04 04:18:39,717 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-08-04 04:18:39,722 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DvDsPerezMartinApplication using Java 15.0.2 on MASTER-PC with PID 17528 (C:\Users\MASTER\Desktop\DaVinci\5to cuatrimestre\Diseño Sistemas\Final\dv-ds-PerezMartin\target\classes started by MASTER in C:\Users\MASTER\Desktop\DaVinci\5to cuatrimestre\Diseño Sistemas\Final\dv-ds-PerezMartin)
+2021-08-04 04:18:39,723 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.8, Spring v5.3.8
+2021-08-04 04:18:39,723 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-04 04:18:39,750 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-04 04:18:39,750 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-04 04:18:40,337 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-04 04:18:40,394 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 51 ms. Found 4 JPA repository interfaces.
+2021-08-04 04:18:40,863 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-08-04 04:18:40,870 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-04 04:18:40,870 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-08-04 04:18:40,870 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-08-04 04:18:40,937 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-04 04:18:40,938 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1187 ms
+2021-08-04 04:18:41,072 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-08-04 04:18:41,201 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-08-04 04:18:41,205 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/dv-ds-perezmartin'
+2021-08-04 04:18:41,352 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-04 04:18:41,386 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-04 04:18:41,468 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-04 04:18:41,538 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-08-04 04:18:41,963 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-04 04:18:41,970 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-04 04:18:42,399 INFO ar.edu.davinci.dvdsPerezMartin.WebConfig [restartedMain] Template Resolver
+2021-08-04 04:18:42,400 INFO ar.edu.davinci.dvdsPerezMartin.WebConfig [restartedMain] Template Resolver result: org.thymeleaf.templateresolver.ClassLoaderTemplateResolver@7f47b01e
+2021-08-04 04:18:42,403 INFO ar.edu.davinci.dvdsPerezMartin.WebConfig [restartedMain] Spring Template Engine
+2021-08-04 04:18:42,411 INFO ar.edu.davinci.dvdsPerezMartin.WebConfig [restartedMain] Spring Template Engine result: org.thymeleaf.spring5.SpringTemplateEngine@2be6b904
+2021-08-04 04:18:42,414 INFO ar.edu.davinci.dvdsPerezMartin.WebConfig [restartedMain] View Resolver
+2021-08-04 04:18:42,416 INFO ar.edu.davinci.dvdsPerezMartin.WebConfig [restartedMain] View Resolver result: org.thymeleaf.spring5.view.ThymeleafViewResolver@3fd24dd2
+2021-08-04 04:18:42,461 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-04 04:18:42,757 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index
+2021-08-04 04:18:43,156 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-08-04 04:18:43,162 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-08-04 04:18:43,193 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-08-04 04:18:43,212 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-04 04:18:43,222 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DvDsPerezMartinApplication in 3.77 seconds (JVM running for 4.302)
+2021-08-04 04:18:45,535 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-04 04:18:45,535 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-08-04 04:18:45,536 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-08-04 04:19:04,441 INFO ar.edu.davinci.dvdsPerezMartin.controlador.rest.ClienteRestControlador [http-nio-8080-exec-3] listar todos los clientes paginados
+2021-08-04 04:19:04,441 INFO ar.edu.davinci.dvdsPerezMartin.servicio.ClienteServicio [http-nio-8080-exec-3] Pagegable: offset: 0 - pageSize:20
+2021-08-04 04:19:21,505 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(3)-127.0.0.1] Application shutdown requested.
+2021-08-04 04:19:21,528 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(3)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-04 04:19:21,531 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(3)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-08-04 04:19:21,535 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(3)-127.0.0.1] HikariPool-1 - Shutdown completed.

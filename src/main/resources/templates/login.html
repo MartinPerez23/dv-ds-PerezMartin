@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+	<head th:replace="fragments/head :: head"></head>
+	<header th:replace="fragments/header :: header"></header>
+	<body>
+		<main >
+		   <form class="form-signin " method="POST" th:action="@{/login}">
+		    <img class="mb-4 mx-auto d-block" th:src="@{/images/bootstrap-logo.svg}" alt="" width="72" height="57"
+             						src="/images/bootstrap-logo.svg"/>
+		    
+
+			<h1 class="h3 mb-3 mx-auto d-block text-center">Iniciar Sesion</h1>
+			
+		    <div class="form-floating">
+				
+		      <input name="username" type="email" class="form-control" id="floatingInput" placeholder="name@example.com" autofocus="true">												
+		      <label for="floatingInput">Email address</label>
+		    </div>
+		    <div class="form-floating">
+
+                  
+				<input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+				<span class="help-inline text-danger" th:text="*{error}">[error]</span>
+		      <label for="floatingPassword">Password</label>
+		    </div>
+				<h6><a href="../cliente/nuevo">Crear una cuenta</a></h6>
+				<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+						    
+		    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+			
+		    <p class="mt-5 mb-3 text-muted">Copyright 2021</p>
+		  </form>
+
+
+		</main>
+	<footer th:replace="fragments/footer :: footer"></footer>
+  </body>
+</html>

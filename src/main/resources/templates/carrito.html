@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+	<head th:replace="fragments/head :: head"></head>
+	<header th:replace="fragments/header :: header"></header>
+	<body>
+	
+	<main>
+		<div class="container bg-dark text-white mb-6">
+    		<h1 class="mt-5 mb-3">Carrito</h1>			
+
+			<div class="row">
+			        <div class="col-12">
+			            <table class="table text-white">
+			                <thead>
+			                    <tr>			                        
+                   					<th>ID PRODUCTO</th>
+                   					<th>DETALLE</th>
+                    				<th>PRECIO</th>
+									<th>CANTIDAD</th>
+									<th>SUBTOTAL</th>
+									<th>TOTAL</th>				                        
+			                    </tr>
+			                </thead>
+			                <tbody>                    			                   		
+								<div th:each="carrito : ${carrito}">								
+			                    	<tr>
+										<td><b th:text="${carrito.product.id}"></b></td>
+										<td><b th:text="${carrito.product.name}"></b></td>
+										<td><b th:text="${carrito.product.price}"></b></td>										
+										<td><div class="input-group mb-3"><a class="btn btn-success text-light" th:href="@{|/agregarCarrito/${carrito.product.id}/|}">+</a>
+											<label class="input-group-text fw-bold" th:text="*{carrito.quantity}"/>
+										<a class="btn btn-danger text-light" th:href="@{|/quitarCarrito/${carrito.product.id}/|}">-</a></div></td>
+										<td><b th:text="${carrito.calcularSubtotal}"></b></td>
+										<td><b th:text="${total}"></b></td>										
+					    			</tr>
+								</div>                    
+			                </tbody>
+			            </table>
+			        	<div class="d-flex justify-content-end">							
+							<a th:href="@{/limpiar}" href="#" class="btn btn-secondary">VaciarCarrito</a>
+							<a href="/comprar" class="btn btn-primary">Comprar</a>
+						</div>
+			        </div>
+			    </div>
+			
+			</div>
+  		</main>	
+	<footer th:replace="fragments/footer :: footer"></footer>
+  </body>
+</html>

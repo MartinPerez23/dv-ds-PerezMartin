@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+	<head th:replace="fragments/head :: head"></head>
+	<header class="site-header sticky-top py-1">
+  <nav class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="py-2" href="../">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+    </a>
+    <a class="py-2 d-none d-md-inline-block fw-bold text-light" href="../panel">LISTA PRODUCTOS</a>
+    <a class="py-2 d-none d-md-inline-block fw-bold text-light" href="../cliente/listar">LISTA CLIENTES</a>
+    <a class="py-2 d-none d-md-inline-block fw-bold text-light" href="../ordenes/listar">LISTA ORDENES</a>	
+  </nav>
+</header>
+	<body>
+		<main>
+		<div class="container">
+    		<h1 class="mt-5 mb-3">Listado de Productos</h1>
+			<a href="producto/nuevo"><button type="submit" class="btn btn-primary">NUEVO PRODUCTO</button></a>
+
+			<div class="row">
+			        <div class="col-12 ">
+			            <table class="table bg-dark text-white">
+			                <thead>
+			                    <tr>
+			                        <th>ID</th>
+			                        <th>NOMBRE</th>
+			                        <th>PRECIO</th>
+			                        <th>STOCK</th>
+									<th>OPCIONES</th>					                        
+			                    </tr>
+			                </thead>
+			                <tbody>                    			                   		
+								<div th:each="producto : ${selections}">
+			                    	<tr>
+										<td th:text="${producto.id}">ID</td>
+										<td th:text="${producto.name}">NOMBRE</td>
+										<td th:text="${producto.price}">PRECIO</td>
+										<td th:text="${producto.stock}">STOCK</td>	
+			                    		<td>
+											<a th:href="@{|producto/${producto.id}/editar|}"><button type="submit" class="btn btn-success">EDITAR</button></a>
+											<a href="#"><button type="submit" class="btn btn-danger">ELIMINAR</button></a>
+										</td>		                       			                       
+			                    	</tr>
+								</div>                    
+			                </tbody>
+			            </table>
+			
+			        </div>
+			    </div>
+			
+			</div>
+  		</main>
+	<footer th:replace="fragments/footer :: footer"></footer>
+  </body>
+</html>
