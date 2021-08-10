@@ -29,7 +29,7 @@
 										<td><b th:text="${carrito.product.price}"></b></td>										
 										<td><div class="input-group mb-3"><a class="btn btn-success text-light" th:href="@{|/agregarCarrito/${carrito.product.id}/|}">+</a>
 											<label class="input-group-text fw-bold" th:text="*{carrito.quantity}"/>
-										<a class="btn btn-danger text-light" th:href="@{|/quitarCarrito/${carrito.product.id}/|}">-</a></div></td>
+										<a class="btn btn-danger text-light" th:href="@{|/quitarCarrito/${carrito.product.id}/|}">-</a></div></td>																	
 										<td><b th:text="${carrito.calcularSubtotal}"></b></td>
 										<td><b th:text="${total}"></b></td>										
 					    			</tr>

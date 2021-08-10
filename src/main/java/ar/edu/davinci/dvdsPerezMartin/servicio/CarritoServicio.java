@@ -11,6 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.validation.ObjectError;
 
 import ar.edu.davinci.dvdsPerezMartin.modelo.Carrito;
 import ar.edu.davinci.dvdsPerezMartin.modelo.Producto;
@@ -96,23 +97,57 @@ public void grabarCarrito(ArrayList<Carrito> carrito) {
 		
 	}
 	
-	public ArrayList<Carrito> sacarProductoDelCarrito(ArrayList<Carrito> carrito, Long id){
+	public ArrayList<Carrito> sacarProductoDelCarrito(ArrayList<Carrito> carrito, Producto producto){
 		
-		LOGGER.info("como entra el carrito: " + carrito.size());
+		
+		LOGGER.info("productos en el carrito: " + carrito.size());
+
+		ArrayList<Carrito> car = new ArrayList<Carrito>();
+		
+		car = (ArrayList<Carrito>) carrito.clone();
+		
+		LOGGER.info("productos en el carrito clonado: " + car.size());
 		//busca en todo el carrito el item
-		for (Carrito c : carrito) {
-        	if(c.getProduct().getId() == id) {
+		
+		
+		int productoId = producto.getId().intValue();
+		
+		
+		for (Carrito c : car) {
+			
+			LOGGER.info("Producto id:"+ productoId);
+			
+			int productoIdDelCarrito = c.getProduct().getId().intValue();
+			
+			LOGGER.info("Producto id del carrito:"+ productoIdDelCarrito);
+			
+        	if(productoId == productoIdDelCarrito) {
+        		LOGGER.info("Encuentra el producto");
         		    //si lo encuentra producto, saca 1
-        		c.setQuantity(c.getQuantity() - 1);
-        			//si no hay mas cantidad de ese producto en el carrito, se elimina el producto del carrito
-        		if(c.getQuantity() == 0) {        			
-        			carrito.remove(c);        			
-        			LOGGER.info("carrito.sacardelcarrito " + carrito.size());
-        		}
-        	}        	
+        		
+        		int cantidad = c.getQuantity();
+        		
+        		cantidad--;
+        		
+        		if(cantidad == 0) {	
+        			
+        			if(car.remove(c)) {
+        				LOGGER.info("carrito.sacarProducto " + car.size());        				
+        				car = new ArrayList<Carrito>();
+        				break;
+        			}
+        		}else {
+        			c.setQuantity(cantidad);
+        			LOGGER.info("carrito.sacar1productodelcarrito " + c.getQuantity());
+        		}     			
+        		
+        	}else {
+        		LOGGER.info("No encuentra un producto");
+        	}
         }
-		return carrito;
-	}
+		
+		return car;
+	}	
 
 
 	public ArrayList<Carrito> agregarProductoAlCarrito(Producto pro, ArrayList<Carrito> carrito) {
@@ -122,27 +157,32 @@ public void grabarCarrito(ArrayList<Carrito> carrito) {
 		car = (ArrayList) carrito.clone();		
 			LOGGER.info("agregarProductosAlCarrito: " + pro.toString());
 			LOGGER.info("agregarProductosAlCarrito: " + carrito.toString());
-			
-			
+						
+			int item = -1;
 			
 			if(carrito.isEmpty()) {
-				
+								
 				carrito.add(new Carrito(pro,1));
+				LOGGER.info("CREA CARRITO: " + carrito.toString());
 				
 			}else {
-				
-				int item = -1;
-				int i = 0;
-				
-				LOGGER.info("VALOR I: " + i);
-				LOGGER.info("VALOR Iten: " + item);
-				for  (i = 0; i < car.size(); i++) {
+				int productoId = pro.getId().intValue();
+								
+				for (Carrito c : car) {
 					
-					if(car.get(i).getProduct().getId() ==  pro.getId()){
-						item = car.get(i).getProduct().getId().intValue();
+					LOGGER.info("Producto id: "+ productoId);
+					
+					int productoIdDelCarrito = c.getProduct().getId().intValue();
+					
+					if(productoId == productoIdDelCarrito) {
+						
+						item = car.indexOf(c);
+						
 					}
-					
-				} 
+				}
+								
+				LOGGER.info("VALOR Item: " + item);
+				
 				
 				if(item == -1) {
 					//no tiene ese producto
@@ -153,17 +193,18 @@ public void grabarCarrito(ArrayList<Carrito> carrito) {
 					int cantidad = carrito.get(item).getQuantity();		
 					int stock = carrito.get(item).getProduct().getStock();
 					//compruebo stock
-					if(cantidad < stock) {				            			
+					if(cantidad < stock) {            			
 						LOGGER.info("sumaCantidad: " + cantidad);
 						
 						carrito.get(item).setQuantity(cantidad + 1);						
 							
 					}else {
     			//mensaje de no se puede agregar mas del mismo producto, no hay mas stock
+						
+						LOGGER.info("NO HAY SUFICIENTE STOCK");
 					}
 					
-				}
-					i= 0;
+				}					
 					item = 0;
 					
 			}

@@ -149,6 +149,7 @@ public class ClienteThymeleafControlador extends MyApp{
     	LOGGER.info("cliente: "+ cliente.toString());
 
     	LOGGER.info("result.hasErrors(): "+ result.hasErrors());
+    	
 
     	if (seguridadServicio.isAuthenticated()) {        	
         	return "redirect:/";

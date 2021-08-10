@@ -14,6 +14,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -81,6 +82,7 @@ public class CarritoThymeleafControlador extends MyApp{
 		
 		ArrayList<Carrito> carrito = carritoServicio.obtenerCarrito(request);
         LOGGER.info("carrito.size: " + carrito.size());
+        
         Producto pro = productoServicio.buscarProductoPorId(productoId);
         LOGGER.info("producto: " + pro.toString());
         
@@ -88,11 +90,11 @@ public class CarritoThymeleafControlador extends MyApp{
         
         car = carritoServicio.agregarProductoAlCarrito(pro,carrito);
         
-        
         LOGGER.info("CARRITO FINAL.size: " + car.size());
         
-        carritoServicio.guardarCarrito(car, request);
-        return "redirect:/";
+        carritoServicio.guardarCarrito(car, request);    
+        
+        return "redirect:/carrito";
     }
 	
 	
@@ -102,9 +104,21 @@ public class CarritoThymeleafControlador extends MyApp{
 		LOGGER.info("GET - quitarDelCarrito: /quitarDelCarrito/productoId");
         ArrayList<Carrito> carrito = carritoServicio.obtenerCarrito(request);
         LOGGER.info("carrito.size: " + carrito.size());
-        ArrayList<Carrito> car = carritoServicio.sacarProductoDelCarrito(carrito,productoId);
-        LOGGER.info("car.size: " + car.size());        
-        carritoServicio.guardarCarrito(car, request);
+        
+        Producto pro = productoServicio.buscarProductoPorId(productoId);
+        LOGGER.info("producto: " + pro.toString());
+        
+        ArrayList<Carrito> car = new ArrayList<Carrito>();
+        
+        car = carritoServicio.sacarProductoDelCarrito(carrito,pro);
+                		
+        if(car != null) {
+        	LOGGER.info("car.size: " + car.size());
+        	carritoServicio.guardarCarrito(car, request);
+        }else {
+        	carritoServicio.limpiarCarrito(request);
+        }
+        	
         
         return "redirect:/carrito";
     }
